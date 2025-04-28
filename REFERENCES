@@ -1,0 +1,42 @@
+# 📚 References & Real-Time Sources for Campus Companion
+
+A detailed list of all references, resources, and tools used for building **Campus Companion** project.
+
+---
+
+| 📌 Category         | 🔗 Source / Reference                                             | 📝 Description                                       |
+|---------------------|-------------------------------------------------------------------|------------------------------------------------------|
+| Study Materials     | [Unsplash](https://unsplash.com)                                  | Real student study photos and backgrounds            |
+| Tech Documentation  | [MongoDB Docs](https://www.mongodb.com/docs/)                     | Backend Database Reference                           |
+|                     | [React Docs](https://react.dev/)                                  | Frontend Framework Reference                         |
+|                     | [Node.js Docs](https://nodejs.org/en/docs)                        | Backend server-side scripting reference              |
+|                     | [Express Docs](https://expressjs.com/)                            | API Development Framework                            |
+| UI Components       | [Tailwind CSS](https://tailwindcss.com/docs)                      | CSS Framework for clean and responsive design        |
+| Icons & Graphics    | [Flaticon](https://www.flaticon.com/)                             | For cute, minimalistic icons                         |
+| Illustrations       | [Storyset](https://storyset.com/)                                 | For animated/cute illustrations (if needed)          |
+| Hosting             | [MongoDB Atlas](https://www.mongodb.com/atlas/database)           | Hosting NoSQL database in cloud                      |
+| Future Technologies | [PWA Insights - web.dev](https://web.dev/progressive-web-apps/)   | For planning future PWA version                      |
+| AI Recommendation   | [Google AI Research](https://ai.google/)                         | Concepts for AI-based recommendation engines         |
+
+---
+
+# 🚀 Why These References Matter?
+
+- Ensure authentic, high-quality project deliverables.
+- Use industry-recognized tools and frameworks.
+- Plan future enhancements based on latest innovations.
+
+---
+
+# 💖 Special Thanks
+
+A huge thanks to all the platforms and open-source communities that enable developers to create amazing solutions for the world.
+
+*"Great projects are built on the shoulders of giants."* ✨
+
+---
+
+# 📄 License
+
+This project and its documentation are licensed under the **MIT License**.
+
