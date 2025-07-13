@@ -178,14 +178,6 @@ MIT License
 
 ---
 
-## 🙌 Contributors
-
-| Name           | GitHub                                  |
-|----------------|-----------------------------------------|
-| Lokesh Agarwal | [lokeshagarwal2304](https://github.com/lokeshagarwal2304) |
-| Gayatri G | [gayatri192005](https://github.com/gayatri192005) |
----
-
 ## ⚡ Final Thoughts
 
 **Campus Companion** isn’t just a project...  
