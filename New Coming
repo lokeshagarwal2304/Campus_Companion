@@ -1,1 +1,21 @@
-Hello
+
+🚀 1. New UI/UX Design (Web + Mobile Responsive)
+✨ Fresh Modern Look (Tailwind + Framer Motion)
+
+🔄 Dark/Light Mode
+
+🎯 Dashboard-based Interface
+
+👣 Quick Navigation Bar: Timetable | Events | Map | Placement | AskBot
+
+🧠 2. Smart AI Chat Assistant (CampusGPT)
+A smart assistant that answers like:
+"Aaj ka lunch menu kya hai?"
+"CS310 class kis room mein hai?"
+
+Tech:
+
+Rasa NLU / OpenAI API
+
+Pre-fed campus knowledgebase
+
