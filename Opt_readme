@@ -1,0 +1,158 @@
+# 🎓 Campus Companion – Smart College Assistant 🚀
+
+> A full-stack intelligent platform for students to manage timetables, placement drives, events, announcements, resources, and more — now accessible via Web and WhatsApp Assistant!
+
+![Tech](https://img.shields.io/badge/Tech-FullStack-green)
+![Built with](https://img.shields.io/badge/Stack-MERN-blue)
+![Status](https://img.shields.io/badge/Version-v1.0.0-purple)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Open Source](https://badgen.net/badge/Open/Source/green)
+
+---
+
+## ✨ Features
+
+- 📅 Personalized Timetable Viewer
+- 📢 Real-time Announcements & Class Alerts
+- 🎉 Upcoming Events & Fest Calendar
+- 🧭 Interactive Campus Map (Room/Lab Search)
+- 🧠 AI-powered AskBot for Student Queries
+- 💼 Placement Drive Tracker + Eligibility Filters
+- 📚 Notes, PYQs & Study Material Vault
+- 🔔 WhatsApp Assistant Bot Integration *(Beta)*
+- 🛠 Admin & CR Panel (Role-based)
+- 🌐 Multilingual Support *(Hindi, Telugu, English)*
+- 🎨 Modern Responsive UI with Dark Mode
+
+---
+
+## 🧱 Tech Stack
+
+| Layer       | Technology                            |
+|-------------|----------------------------------------|
+| Frontend    | React.js, TailwindCSS, Framer Motion   |
+| Backend     | Node.js, Express.js                    |
+| Database    | MongoDB + Mongoose                     |
+| Auth        | Firebase Auth / JWT (Optional)         |
+| Bot Layer   | Twilio / Meta WhatsApp API             |
+| Hosting     | Vercel (Frontend), Railway (Backend)   |
+
+---
+
+## 📂 Project Structure
+
+```
+
+CampusCompanion/
+├── client/         # React Frontend
+├── server/         # Express Backend
+├── bot/            # WhatsApp Bot Scripts
+├── .env            # Environment Variables
+└── README.md       # This file
+
+````
+
+---
+
+## ⚙️ APIs Overview
+
+| Endpoint               | Method | Purpose                             |
+|------------------------|--------|-------------------------------------|
+| `/api/timetable/:id`   | GET    | Fetch student timetable             |
+| `/api/events`          | GET    | View upcoming college events        |
+| `/api/notices`         | GET    | Get latest announcements            |
+| `/api/placements`      | GET    | Placement drive info                |
+| `/api/ask`             | POST   | Query the Campus AskBot             |
+| `/api/resources/:sem`  | GET    | Notes & materials by semester       |
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repo
+```bash
+git clone https://github.com/your-username/campus-companion.git
+cd campus-companion
+````
+
+### 2️⃣ Set Up the Backend
+
+```bash
+cd server
+npm install
+npm run dev
+```
+
+### 3️⃣ Set Up the Frontend
+
+```bash
+cd ../client
+npm install
+npm start
+```
+
+### 4️⃣ (Optional) Start Bot Tunnel
+
+```bash
+cd ../bot
+node webhook.js
+```
+
+---
+
+## 📱 WhatsApp Bot Demo (Optional)
+
+> Powered by Twilio or Meta Business API
+> Allows voice/text queries like:
+>
+> * “What’s today’s class?”
+> * “Where is CS301 class?”
+> * “Upcoming hackathon?”
+
+---
+
+## 🧠 AI AskBot Dataset Sample
+
+```json
+{
+  "When is the next fest?": "The next fest is Innovatia on Aug 5.",
+  "Where is ECE Block?": "It’s behind the Admin building, 2nd left from the main gate.",
+  "Who is the CR of 3rd year CSE?": "That’s Ankit Verma."
+}
+```
+
+---
+
+## 🛡️ Admin Panel
+
+| Role    | Access Level                         |
+| ------- | ------------------------------------ |
+| Admin   | Full CRUD on events, drives, notices |
+| CR      | Can post announcements only          |
+| Student | Read-only access to all modules      |
+
+---
+
+## 📸 Screenshots
+
+> *Add screenshots here once UI is built*
+> `/client/assets/screenshots/*.png`
+
+---
+
+## 🙌 Contributors
+
+* **Lokesh Agarwal** – [lokeshagarwal2304](https://github.com/lokeshagarwal2304) (Project Lead)
+
+Want to contribute? Open a pull request or issue.
+Let’s build a community-driven college platform together 💪
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🌟 Star this repo if you found it helpful!
