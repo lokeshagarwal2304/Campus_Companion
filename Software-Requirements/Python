@@ -1,0 +1,87 @@
+The **Campus WhatsApp Assistant** is a smart, Python-powered add-on for the Campus Companion project that enables students to interact with campus-related services via WhatsApp. This integration allows users to get real-time updates on schedules, mess menu, event notifications, and more — all from the convenience of their phones.
+
+---
+
+### 🛠️ Tech Stack Used:
+
+| Component            | Technology                   | Purpose                                         |
+| -------------------- | ---------------------------- | ----------------------------------------------- |
+| Programming Language | **Python**                   | Core logic & API handling                       |
+| Web Framework        | **Flask / FastAPI**          | To handle incoming HTTP requests from Twilio    |
+| Messaging API        | **Twilio WhatsApp API**      | Interface between WhatsApp and our backend      |
+| Data Storage         | **JSON / Firebase / SQLite** | Stores timetable, menu, events, etc.            |
+| Scheduling           | `schedule`, `APScheduler`    | To automate message pushes (e.g., daily menu)   |
+| Hosting              | **Railway / Render**         | Cloud platform to deploy the Python app         |
+| Environment Handling | `python-dotenv`              | Manages API keys & secret configs securely      |
+| Git Integration      | **GitHub Actions**           | Auto-updates and version tracking of data files |
+
+---
+
+### ✨ Features:
+
+* 📅 **Timetable Lookup** – Ask “timetable” and get your day’s class schedule.
+* 🍱 **Mess Menu Access** – Query “menu” to get today’s food plan.
+* 📰 **Event Alerts** – Receive upcoming campus event notifications.
+* 🧭 **Lost & Found (Planned)** – Report or search for lost items via WhatsApp.
+* 🌐 **Multilingual Support (Future)** – Optional integration with Google Translate API or GPT for Hindi/Telugu input.
+
+---
+
+### 📂 Folder Structure:
+
+```
+campus_whatsapp_assistant/
+│
+├── app.py                  # Main Flask server
+├── bot_logic.py            # Reply logic for keywords
+├── data/
+│   ├── schedule.json       # Timetable
+│   ├── mess_menu.json      # Food menu
+│   └── events.json         # Club or fest updates
+├── .env                    # API keys (Twilio, DB)
+├── requirements.txt        # Python dependencies
+└── README.md               # Project info
+```
+
+---
+
+### 🔐 Security:
+
+* Twilio SID & Auth tokens are managed via `.env` file.
+* WhatsApp sandbox used during testing.
+* Rate limits and validation on user inputs.
+
+---
+
+### 🚀 Deployment:
+
+* Hosted on [Railway](https://railway.app) or [Render](https://render.com).
+* Public URL is configured as webhook in Twilio Sandbox.
+* Python server listens for messages and replies dynamically based on user query.
+
+---
+
+### 🤖 Sample Python Snippet:
+
+```python
+from flask import Flask, request
+from twilio.twiml.messaging_response import MessagingResponse
+import json
+
+app = Flask(__name__)
+
+@app.route("/whatsapp", methods=["POST"])
+def bot_reply():
+    msg = request.form.get("Body").lower()
+    response = MessagingResponse()
+
+    if "menu" in msg:
+        with open("data/mess_menu.json") as file:
+            menu = json.load(file)
+            today = "Friday"  # Ideally get today's day
+            response.message(f"🍽️ Today's Menu: {menu.get(today, 'No data')}")
+    else:
+        response.message("Hi! Type 'menu' or 'timetable' for info.")
+
+    return str(response)
+```
